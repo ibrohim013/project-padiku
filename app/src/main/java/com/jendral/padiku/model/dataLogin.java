@@ -8,7 +8,6 @@ public class dataLogin {
 
     public dataLogin() {
     }
-
     public dataLogin(String username, String nama, String password) {
         this.username = username;
         this.nama = nama;
@@ -39,9 +38,7 @@ public class dataLogin {
         this.password = password;
     }
 
-    public String getNama() {
-        return nama;
-    }
+    public String getNama() { return nama; }
 
     public void setNama(String nama) {
         this.nama = nama;
