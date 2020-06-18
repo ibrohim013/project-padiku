@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                             if (dataSnapshot.child(user).exists()) {
                                 dataLogin data = dataSnapshot.child(user).getValue(dataLogin.class);
                                 if (data != null) {
-                                    if (data.getUsername().equals(user)) {
+                                    if (data.getNama().equals(user)) {
                                         if (data.getPassword().equals(sandi)) {
                                             if (rememberMe.isChecked()) {
                                                 startToActivity(true, data);

@@ -57,7 +57,8 @@ public class DaftarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daftar);
-
+        dialog = new ProgressDialog(this);
+        dialog.setCancelable(false);
         cricleView = findViewById(R.id.cricleView);
         nama = findViewById(R.id.nama);
         email = findViewById(R.id.email);
@@ -130,21 +131,21 @@ public class DaftarActivity extends AppCompatActivity {
         String _kota = kota.getText().toString();
         String _telepon = telepon.getText().toString();
 
-        database.child("data-user").child(_username)
+        database.child("data-user").child(_nama)
                 .setValue(new dataDaftar(_username,_nama,_email,
                         _kota,
                         _telepon,image)).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 database.child("login")
-                        .child(_username)
+                        .child(_nama)
                         .setValue(new dataLogin(_username, _nama, _password))
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 dialog.dismiss();
                                 clearEditText();
-                                startActivity(new Intent(DaftarActivity.this, MainActivity.class));
+                                startActivity(new Intent(DaftarActivity.this, LoginActivity.class));
                                 Toast.makeText(DaftarActivity.this, "Data berhasil terdaftar", Toast.LENGTH_SHORT).show();
                             }
                         }).addOnFailureListener(new OnFailureListener() {
@@ -153,7 +154,7 @@ public class DaftarActivity extends AppCompatActivity {
                         dialog.dismiss();
                         clearEditText();
                         Toast.makeText(DaftarActivity.this, "Data gagal terdaftar", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(DaftarActivity.this, MainActivity.class));
+                        startActivity(new Intent(DaftarActivity.this, LoginActivity.class));
                     }
                 });
             }
@@ -163,7 +164,7 @@ public class DaftarActivity extends AppCompatActivity {
                 dialog.dismiss();
                 clearEditText();
                 Toast.makeText(DaftarActivity.this, "Data gagal terdaftar", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(DaftarActivity.this, MainActivity.class));
+                startActivity(new Intent(DaftarActivity.this, LoginActivitydafta.class));
             }
         });
     }

@@ -28,7 +28,7 @@ public class NotificationsFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_notifications, container, false);
-
+        context = v.getContext();
         daftar = v.findViewById(R.id.daftar);
         masuk = v.findViewById(R.id.masuk);
         linearUdahLogin = v.findViewById(R.id.linearUdahLogin);
@@ -38,8 +38,8 @@ public class NotificationsFragment extends Fragment {
             linearBelumLogin.setVisibility(View.GONE);
             linearUdahLogin.setVisibility(View.VISIBLE);
         }else{
-            linearBelumLogin.setVisibility(View.GONE);
-            linearUdahLogin.setVisibility(View.VISIBLE);
+            linearBelumLogin.setVisibility(View.VISIBLE);
+            linearUdahLogin.setVisibility(View.GONE);
 
         }
 

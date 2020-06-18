@@ -8,6 +8,7 @@
     tools:context=".ui.NotificationsFragment">
 
     <RelativeLayout
+        android:visibility="gone"
         android:id="@+id/linearUdahLogin"
         android:layout_marginStart="20dp"
         android:gravity="center"
