@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "304857603899",
+    "firebase_url": "https://padiku-15cbc.firebaseio.com",
+    "project_id": "padiku-15cbc",
+    "storage_bucket": "padiku-15cbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304857603899:android:f560507ae6b2cf570d611e",
+        "android_client_info": {
+          "package_name": "com.jendral.padiku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304857603899-eu2f9r3kobrddrpr69efgotp50seeh4e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jendral.padiku",
+            "certificate_hash": "c0d892d5346f784d5b5401a78cef461f3cd0a427"
+          }
+        },
+        {
+          "client_id": "304857603899-0jcpm46vqefjnkim6s1tc3ojrev839o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf7360de_VH8TOhKLECEsPllpHrtL_Wys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304857603899-0jcpm46vqefjnkim6s1tc3ojrev839o3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

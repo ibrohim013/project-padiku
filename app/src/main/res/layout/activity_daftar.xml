@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".DaftarActivity">
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/title_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_below="@+id/title_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearCricleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cricleView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:hint="Nama"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageProfile"/>
+            <EditText
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:hint="Email"
+                android:id="@+id/email"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama"/>
+            <EditText
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/kota"
+                android:layout_width="match_parent"
+                android:hint="Kota"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"/>
+
+            <EditText
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/telepon"
+                android:layout_width="match_parent"
+                android:hint="Telepon"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kota"/>
+
+            <EditText
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/sandi"
+                android:layout_width="match_parent"
+                android:hint="sandi"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/telepon"/>
+
+            <EditText
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/konfimasi_sandi"
+                android:layout_width="match_parent"
+                android:hint="konfirmasi sandi"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sandi"/>
+
+            <Button
+                android:id="@+id/masuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/konfirmasi"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:background="#D50000"
+                android:layout_marginBottom="20dp"
+                android:text="Masuk"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

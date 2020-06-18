@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="65dp"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@android:color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/fab_photo"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab_add"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/ic_photo"
+        android:tint="@color/colorPrimaryDark"
+        app:backgroundTint="#0AF113"
+        app:fabSize="mini" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/fab_image"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab_photo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/ic_image"
+        android:tint="@color/colorPrimaryDark"
+        app:backgroundTint="#0AF113"
+        app:fabSize="mini" />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_below="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textIsSelectable="true"
+                android:textSize="30dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#040404"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/title_gejala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:justificationMode="inter_word"
+                android:textSize="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#050505"
+                android:textIsSelectable="true"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/gejala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:justificationMode="inter_word"
+                android:textSize="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#050505"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/title_solusi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:justificationMode="inter_word"
+                android:textSize="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/solusi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:justificationMode="inter_word"
+                android:layout_marginBottom="50dp"
+                android:textSize="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:textStyle="" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
