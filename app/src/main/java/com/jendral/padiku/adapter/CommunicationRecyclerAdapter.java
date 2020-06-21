@@ -1,11 +1,14 @@
 package com.jendral.padiku.adapter;
 
+import android.Manifest;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DownloadManager;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -20,6 +23,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -35,6 +40,7 @@ import com.google.firebase.storage.StorageReference;
 import com.jendral.padiku.R;
 import com.jendral.padiku.model.dataCommunication;
 import com.jendral.padiku.preferences;
+import com.jendral.padiku.ui.HomeFragment;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -149,7 +155,7 @@ public class CommunicationRecyclerAdapter extends RecyclerView.Adapter<Communica
             if (dataCommunication.getJenis().equals("image")) {
                 pesan.setVisibility(View.GONE);
                 imageMessage.setVisibility(View.VISIBLE);
-                Glide.with(context).load(dataCommunication.getPesan()).placeholder(R.drawable.profile).into(imageMessage);
+                Glide.with(context).load(dataCommunication.getPesan()).placeholder(R.drawable.image_default).into(imageMessage);
             } else if (dataCommunication.getJenis().equals("text")) {
                 pesan.setVisibility(View.VISIBLE);
                 imageMessage.setVisibility(View.GONE);
@@ -188,19 +194,25 @@ public class CommunicationRecyclerAdapter extends RecyclerView.Adapter<Communica
                         } else {
 
                             if (limit <= (1000 * 60 * 5)) {
-
-                                menuLimitShowData(
-                                        dataCommunication.getPush(),
-                                        dataCommunication.getJenis(),
-                                        dataCommunication.getImage()
-                                );
+                                if(ContextCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED){
+                                    ActivityCompat.requestPermissions((Activity) context,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},10);
+                                }else{
+                                    menuLimitShowData(
+                                            dataCommunication.getPush(),
+                                            dataCommunication.getJenis(),
+                                            dataCommunication.getImage()
+                                    );
+                                }
 
                             } else {
-
-                                menuNotLimitShowData(
-                                        dataCommunication.getJenis(),
-                                        dataCommunication.getImage()
-                                );
+                                if(ContextCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED){
+                                    ActivityCompat.requestPermissions((Activity) context,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},10);
+                                }else{
+                                    menuNotLimitShowData(
+                                            dataCommunication.getJenis(),
+                                            dataCommunication.getImage()
+                                    );
+                                }
 
                             }
                         }
