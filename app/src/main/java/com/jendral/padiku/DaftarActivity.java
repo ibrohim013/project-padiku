@@ -23,8 +23,11 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
@@ -71,7 +74,7 @@ public class DaftarActivity extends AppCompatActivity {
         masuk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String _nama = nama.getText().toString();
+                final String _nama = nama.getText().toString();
                 String _email = email.getText().toString();
                 String _kota = kota.getText().toString();
                 String _telepon = telepon.getText().toString();
@@ -97,11 +100,25 @@ public class DaftarActivity extends AppCompatActivity {
                     konfirmasi_sandi.setError("Data tidak boleh kosong");
                     konfirmasi_sandi.requestFocus();
                 }else {
-                    if (bitmap == null) {
-                        saveDatatoDatabase("");
-                    } else {
-                        saveUploadImage(bitmap);
-                    }
+                    database.child("login").addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            if(dataSnapshot.child(_nama).exists()){
+                                Toast.makeText(DaftarActivity.this, "Username sudah ada", Toast.LENGTH_SHORT).show();
+                            }else{
+                                if (bitmap == null) {
+                                    saveDatatoDatabase("");
+                                } else {
+                                    saveUploadImage(bitmap);
+                                }
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
                 }
             }
         });
@@ -120,6 +137,13 @@ public class DaftarActivity extends AppCompatActivity {
             }
         });
 
+    }
+    private void startToActivity(boolean active, String key,String name) {
+        preferences.setActiveData(DaftarActivity.this, active);
+        preferences.setKeyData(DaftarActivity.this,key);
+        preferences.setNamaData(DaftarActivity.this, name);
+        startActivity(new Intent(DaftarActivity.this, MainActivity.class));
+        finish();
     }
 
     private void saveDatatoDatabase(String image) {
@@ -145,7 +169,7 @@ public class DaftarActivity extends AppCompatActivity {
                             public void onSuccess(Void aVoid) {
                                 dialog.dismiss();
                                 clearEditText();
-                                startActivity(new Intent(DaftarActivity.this, LoginActivity.class));
+                                startToActivity(true,_username,_nama);
                                 Toast.makeText(DaftarActivity.this, "Data berhasil terdaftar", Toast.LENGTH_SHORT).show();
                             }
                         }).addOnFailureListener(new OnFailureListener() {
@@ -164,7 +188,7 @@ public class DaftarActivity extends AppCompatActivity {
                 dialog.dismiss();
                 clearEditText();
                 Toast.makeText(DaftarActivity.this, "Data gagal terdaftar", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(DaftarActivity.this, LoginActivitydafta.class));
+                startActivity(new Intent(DaftarActivity.this, LoginActivity.class));
             }
         });
     }

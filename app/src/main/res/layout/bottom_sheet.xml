@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="30dp"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/sandi_sekarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Sandi sekarang"/>
+
+    <EditText
+        android:id="@+id/sandi_baru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Sandi baru"/>
+
+    <EditText
+        android:id="@+id/konfirmasi_sandi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginBottom="30dp"
+        android:hint="Konfirmasi sandi"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ubah sandi"
+        android:background="@drawable/button_daftar"
+        android:textColor="@android:color/white"
+        android:id="@+id/button_ubah_sandi"
+        android:layout_marginBottom="20dp"/>
+
+
+</LinearLayout>
