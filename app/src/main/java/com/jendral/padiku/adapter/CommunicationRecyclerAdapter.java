@@ -101,7 +101,7 @@ public class CommunicationRecyclerAdapter extends RecyclerView.Adapter<Communica
         TextView dari,
                 pesan,
                 waktu,
-                textTanggal;
+                textTanggal,level;
         CircleImageView imageView;
         LinearLayout linear, linear2, linearTanggal;
         CardView cardView, cardTanggal;
@@ -113,6 +113,7 @@ public class CommunicationRecyclerAdapter extends RecyclerView.Adapter<Communica
             imageMessage = itemView.findViewById(R.id.imageMessage);
             pesan = itemView.findViewById(R.id.pesan);
             waktu = itemView.findViewById(R.id.waktu);
+            level = itemView.findViewById(R.id.level);
             imageView = itemView.findViewById(R.id.imageView);
             linear = itemView.findViewById(R.id.linear);
             linear2 = itemView.findViewById(R.id.linear2);
@@ -128,6 +129,7 @@ public class CommunicationRecyclerAdapter extends RecyclerView.Adapter<Communica
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm aa", locale);
 
             dari.setText(dataCommunication.getDari());
+            level.setText(dataCommunication.getLevel());
             pesan.setText(dataCommunication.getPesan());
             waktu.setText(simpleDateFormat.format(dataCommunication.getWaktu()));
 
@@ -155,6 +157,7 @@ public class CommunicationRecyclerAdapter extends RecyclerView.Adapter<Communica
 
             if (dataCommunication.getKey().equals(preferences.getKeyData(context))) {
                 dari.setVisibility(View.GONE);
+                level.setVisibility(View.GONE);
                 imageView.setVisibility(View.GONE);
                 linear.setGravity(Gravity.CENTER | Gravity.END);
                 linear2.setGravity(Gravity.CENTER | Gravity.END);

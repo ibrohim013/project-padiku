@@ -5,13 +5,24 @@ public class dataLogin {
     private String username;
     private String nama;
     private String password;
+    private String level;
 
     public dataLogin() {
     }
-    public dataLogin(String username, String nama, String password) {
+
+    public dataLogin(String username, String nama, String password, String level) {
         this.username = username;
         this.nama = nama;
         this.password = password;
+        this.level = level;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
     }
 
     public String getKey() {

@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
@@ -52,6 +53,7 @@ public class NotificationsFragment extends Fragment {
 
     ArrayList<dataDaftar> ArrayListUdahDaftar = new ArrayList();
     DatabaseReference database = FirebaseDatabase.getInstance().getReference();
+    Toolbar toolbar;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -69,14 +71,19 @@ public class NotificationsFragment extends Fragment {
         telepon = v.findViewById(R.id.telepon);
         imageProfile = v.findViewById(R.id.imageProfile);
         ubahSandi = v.findViewById(R.id.ubahSandi);
+        toolbar = v.findViewById(R.id.toolbar);
 
-        if (preferences.getActiveData(v.getContext())) {
+        toolbar.inflateMenu(R.menu.menu_logout);
+        showDataUserDetail();
+
+        if (!preferences.getNamaData(v.getContext()).equals("")) {
             linearBelumLogin.setVisibility(View.GONE);
             linearUdahLogin.setVisibility(View.VISIBLE);
-            showDataUserDetail();
+            toolbar.setVisibility(View.VISIBLE);
         } else {
             linearBelumLogin.setVisibility(View.VISIBLE);
             linearUdahLogin.setVisibility(View.GONE);
+            toolbar.setVisibility(View.GONE);
 
         }
 
@@ -134,5 +141,4 @@ public class NotificationsFragment extends Fragment {
                 });
 
     }
-
 }

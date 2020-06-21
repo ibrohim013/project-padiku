@@ -38,29 +38,12 @@
         android:hint="Password"
         android:inputType="textPassword" />
 
-    <LinearLayout
-        android:id="@+id/layoutRememberMe"
-        android:layout_below="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:gravity="center_vertical|end"
-        android:orientation="horizontal">
-
-        <Switch
-            android:id="@+id/rememberMe"
-            android:layout_width="wrap_content"
-            android:textColor="@color/colorPrimaryDark"
-            android:layout_height="wrap_content"
-            android:text="Remember me" />
-    </LinearLayout>
 
     <Button
         android:id="@+id/masuk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/layoutRememberMe"
+        android:layout_below="@+id/password"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"

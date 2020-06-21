@@ -10,20 +10,22 @@ public class dataCommunication {
     private String jenis;
     private String image;
     private String push;
+    private String level;
 
     public dataCommunication() {
     }
 
-    public dataCommunication(String key, String dari, String pesan, String tanggal, long waktu, String jenis) {
+    public dataCommunication(String key, String dari, String pesan, String tanggal, long waktu, String jenis,String level) {
         this.key = key;
         this.dari = dari;
         this.pesan = pesan;
         this.tanggal = tanggal;
         this.waktu = waktu;
         this.jenis = jenis;
+        this.level = level;
     }
 
-    public dataCommunication(String key, String dari, String pesan, String tanggal, long waktu, String jenis, String image) {
+    public dataCommunication(String key, String dari, String pesan, String tanggal, long waktu, String jenis, String image,String level) {
         this.key = key;
         this.dari = dari;
         this.pesan = pesan;
@@ -31,6 +33,15 @@ public class dataCommunication {
         this.waktu = waktu;
         this.jenis = jenis;
         this.image = image;
+        this.level = level;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
     }
 
     public String getKey() {

@@ -67,11 +67,6 @@ public class HomeFragment extends Fragment {
             .setAssetFilePath("model/manifest.json")
             .build();
 
-
-
-
-
-
     FloatingActionButton fab_add,
             fab_photo,
             fab_image;

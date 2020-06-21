@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
             password;
     Button masuk,
             daftar;
-    Switch rememberMe;
+//    Switch rememberMe;
 
     DatabaseReference database = FirebaseDatabase.getInstance().getReference();
 
@@ -34,7 +34,6 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         username = findViewById(R.id.username);
-        rememberMe = findViewById(R.id.rememberMe);
         password = findViewById(R.id.password);
         masuk = findViewById(R.id.masuk);
         daftar = findViewById(R.id.daftar);
@@ -59,11 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                                 if (data != null) {
                                     if (data.getNama().equals(user)) {
                                         if (data.getPassword().equals(sandi)) {
-                                            if (rememberMe.isChecked()) {
-                                                startToActivity(true, data);
-                                            } else {
-                                                startToActivity(false, data);
-                                            }
+                                            startToActivity(true, data);
                                         } else {
                                             Toast.makeText(LoginActivity.this, "Kata sandi salah", Toast.LENGTH_SHORT).show();
                                         }
@@ -96,6 +91,7 @@ public class LoginActivity extends AppCompatActivity {
     private void startToActivity(boolean active, dataLogin data) {
         preferences.setActiveData(LoginActivity.this, active);
         preferences.setKeyData(LoginActivity.this, data.getUsername());
+        preferences.setLevelData(LoginActivity.this, data.getLevel());
         preferences.setNamaData(LoginActivity.this, data.getNama());
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
         finish();

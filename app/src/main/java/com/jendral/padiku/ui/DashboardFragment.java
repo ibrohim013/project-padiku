@@ -192,7 +192,8 @@ public class DashboardFragment extends Fragment {
                                 simpleDateFormat.format(System.currentTimeMillis()),
                                 System.currentTimeMillis(),
                                 "image",
-                                nameImage
+                                nameImage,
+                                preferences.getLevelData(context)
                         )).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
@@ -246,7 +247,8 @@ public class DashboardFragment extends Fragment {
                             send,
                             simpleDateFormat.format(System.currentTimeMillis()),
                             System.currentTimeMillis(),
-                            "text"))
+                            "text",
+                            preferences.getLevelData(context)))
                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void aVoid) {

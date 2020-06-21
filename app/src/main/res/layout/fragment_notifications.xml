@@ -7,7 +7,19 @@
     android:orientation="vertical"
     tools:context=".ui.NotificationsFragment">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        app:title="Profile"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"/>
+
     <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone"
         android:id="@+id/linearUdahLogin"
         android:layout_marginStart="20dp"
         android:gravity="center"
@@ -61,10 +73,9 @@
         <Button
             android:id="@+id/ubahSandi"
             android:layout_marginTop="20dp"
-            android:textColor="@android:color/white"
             android:layout_below="@+id/telepon"
             android:layout_width="match_parent"
-            android:background="@drawable/button_daftar"
+            android:background="@drawable/button_transparant"
             android:layout_height="wrap_content"
             android:text="Ubah Kata Sandi"/>
 
@@ -73,9 +84,9 @@
 
 
     <RelativeLayout
-        android:visibility="gone"
         android:layout_below="@+id/linearUdahLogin"
         android:id="@+id/linearBelumLogin"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="20dp"
@@ -85,7 +96,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:scaleType="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/processing"
             android:id="@+id/imageKetLogin"/>
 
         <TextView
@@ -94,12 +106,23 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
+            android:textSize="20dp"
             android:layout_height="wrap_content"
-            android:text="Keterangan"
+            android:text="Ups, Gabung dulu yuk!"
+            android:textStyle="bold"
             android:id="@+id/ket"/>
 
-        <LinearLayout
+        <TextView
             android:layout_below="@+id/ket"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masuk atau daftar ke padiku. untuk bisa mengetahui penyakitpadi dan bisa berkomunikasi sesama petani"
+            android:id="@+id/ket2"/>
+
+        <LinearLayout
+            android:layout_below="@+id/ket2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"

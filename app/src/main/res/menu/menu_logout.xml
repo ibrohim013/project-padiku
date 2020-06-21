@@ -2,20 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
-        android:visible="false"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="Home" />
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/ic_power"
+        android:onClick="logout"
+        android:title="Logout" />
 
-    <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_forum"
-        android:visible="false"
-        android:title="Communication" />
-
-    <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_account"
-        android:title="Profil" />
 
 </menu>

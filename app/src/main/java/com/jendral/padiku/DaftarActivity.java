@@ -142,6 +142,7 @@ public class DaftarActivity extends AppCompatActivity {
         preferences.setActiveData(DaftarActivity.this, active);
         preferences.setKeyData(DaftarActivity.this,key);
         preferences.setNamaData(DaftarActivity.this, name);
+        preferences.setLevelData(DaftarActivity.this, "user");
         startActivity(new Intent(DaftarActivity.this, MainActivity.class));
         finish();
     }
@@ -163,7 +164,7 @@ public class DaftarActivity extends AppCompatActivity {
             public void onSuccess(Void aVoid) {
                 database.child("login")
                         .child(_nama)
-                        .setValue(new dataLogin(_username, _nama, _password))
+                        .setValue(new dataLogin(_username, _nama, _password,"user"))
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
