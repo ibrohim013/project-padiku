@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".ui.HomeFragment">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -131,6 +132,32 @@
                 android:textStyle="" />
         </LinearLayout>
     </ScrollView>
+    <RelativeLayout
+        android:id="@+id/lineProsess"
+        android:gravity="center"
+        android:elevation="6dp"
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/proggresBar"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@android:color/white"
+            android:progressTint="@android:color/white"
+            android:layout_width="220dp"
+            android:layout_height="220dp"/>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="#4CE8D3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sedang Mengunggah"
+            android:layout_below="@+id/proggresBar"
+            android:textStyle="bold"/>
+    </RelativeLayout>
 
 
 

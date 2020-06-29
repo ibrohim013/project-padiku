@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -72,8 +73,8 @@ public class HomeFragment extends Fragment {
             fab_image;
 
     boolean isRotate = false;
-
-
+    RelativeLayout lineProsess;
+    Thread thread;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -85,6 +86,7 @@ public class HomeFragment extends Fragment {
         fab_image = v.findViewById(R.id.fab_image);
         title_gejala = v.findViewById(R.id.title_gejala);
         title_solusi = v.findViewById(R.id.title_solusi);
+        lineProsess = v.findViewById(R.id.lineProsess);
 
         imageView = v.findViewById(R.id.image);
         textView = v.findViewById(R.id.textView);
@@ -184,8 +186,8 @@ public class HomeFragment extends Fragment {
     }
 
     private void setLabelerFromLocalModel(Bitmap uri) {
-        showProgressDialog();
-
+//        showProgressDialog();
+        lineProsess.setVisibility(View.VISIBLE);
 
         try {
             FirebaseVisionOnDeviceAutoMLImageLabelerOptions options =
@@ -193,9 +195,21 @@ public class HomeFragment extends Fragment {
                             .setConfidenceThreshold(0.0f)
                             .build();
 
-            FirebaseVisionImageLabeler labeler = FirebaseVision.getInstance().getOnDeviceAutoMLImageLabeler(options);
-            FirebaseVisionImage image = FirebaseVisionImage.fromBitmap( uri);
-            processImageLabeler(labeler,image);
+            final FirebaseVisionImageLabeler labeler = FirebaseVision.getInstance().getOnDeviceAutoMLImageLabeler(options);
+            final FirebaseVisionImage image = FirebaseVisionImage.fromBitmap( uri);
+
+            thread = new Thread(){
+                 public void run(){
+                     try {
+                         sleep(7000);
+                     } catch (InterruptedException e) {
+                         e.printStackTrace();
+                     }finally{
+                         processImageLabeler(labeler,image);
+                     }
+                 }
+            };
+            thread.start();
         } catch (FirebaseMLException e) {
             e.printStackTrace();
         }
@@ -209,6 +223,7 @@ public class HomeFragment extends Fragment {
             public void onSuccess(List<FirebaseVisionImageLabel> labels) {
                 dialog.dismiss();
                 dataHasil.clear();
+                lineProsess.setVisibility(View.GONE);
                 for(FirebaseVisionImageLabel label : labels){
                     eachLabel = label.getText().toUpperCase();
 //                    float confidence =  label.getConfidence();
@@ -220,6 +235,7 @@ public class HomeFragment extends Fragment {
                 title_gejala.setText("Gejala");
                 title_solusi.setText("Cara Pengendalian");
                 fab_add.setVisibility(View.GONE);
+
                 if(hasil.equals("PENGGEREK BATANG PADI")){
 
                     gejala.setText( "Terdapatnya penggerek di lapangan dapat dilihat dari adanya ngengat di pertanaman dan larva di dalam batang. Mekanisme kerusakan yaitu larva merusak sistem pembuluh tanaman di dalam batang. Penggerek batang padi menyerang tanaman padi pada semua fase pertumbuhan tanaman, menimbulkan gejala sundep pada fase pertumbuhan vegetatif dan beluk (malai hampa) pada fase pertumbuhan generatif.");
