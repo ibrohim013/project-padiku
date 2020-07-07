@@ -485,7 +485,9 @@ public class HomeFragment extends Fragment {
                     gejala.setText("obat");
                     solusi.setText("hama");
                 }else if (hasil.equals("NOT FOUND")){
+                    title_gejala.setVisibility(View.GONE);
                     gejala.setVisibility(View.GONE);
+                    title_solusi.setVisibility(View.GONE);
                     solusi.setVisibility(View.GONE);
                 }
 
