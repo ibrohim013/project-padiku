@@ -25,4 +25,10 @@
         android:label="Padiku"
         tools:layout="@layout/fragment_home" />
 
+    <fragment
+        android:id="@+id/navigation_gejala"
+        android:name="com.jendral.padiku.ui.HamaGejalaFragment"
+        android:label="Hama &amp; Gejala "
+        tools:layout="@layout/fragment_hama_gejala" />
+
 </navigation>

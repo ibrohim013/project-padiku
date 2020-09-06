@@ -18,6 +18,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.jendral.padiku.model.dataLogin;
 
+import at.favre.lib.crypto.bcrypt.BCrypt;
+
 public class LoginActivity extends AppCompatActivity {
     EditText username,
             password;
@@ -57,7 +59,14 @@ public class LoginActivity extends AppCompatActivity {
                                 dataLogin data = dataSnapshot.child(user).getValue(dataLogin.class);
                                 if (data != null) {
                                     if (data.getNama().equals(user)) {
-                                        if (data.getPassword().equals(sandi)) {
+//                                        if (data.getPassword().equals(sandi)) {
+//                                            startToActivity(true, data);
+//                                        } else {
+//                                            Toast.makeText(LoginActivity.this, "Kata sandi salah", Toast.LENGTH_SHORT).show();
+//                                        }
+
+                                        BCrypt.Result result = BCrypt.verifyer().verify(sandi.toCharArray(), data.getPassword());
+                                        if (result.verified) {
                                             startToActivity(true, data);
                                         } else {
                                             Toast.makeText(LoginActivity.this, "Kata sandi salah", Toast.LENGTH_SHORT).show();

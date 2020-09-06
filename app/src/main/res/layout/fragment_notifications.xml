@@ -76,6 +76,7 @@
             android:layout_below="@+id/telepon"
             android:layout_width="match_parent"
             android:background="@drawable/button_transparant"
+            android:textColor="@android:color/white"
             android:layout_height="wrap_content"
             android:text="Ubah Kata Sandi"/>
 
@@ -87,10 +88,11 @@
         android:layout_below="@+id/linearUdahLogin"
         android:id="@+id/linearBelumLogin"
         android:visibility="gone"
+        android:background="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:gravity="center">
 
         <ImageView

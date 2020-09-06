@@ -266,61 +266,61 @@ public class HomeFragment extends Fragment {
                             "Penyemprotan dengan insektisida berdasarkan hasil pengamatan, yaitu apabila ditemukan rata-rata > 1 kelompok telur/3m? atau intensitas serangan penggerek batang padi (sundep) rata-rata > 10%-15% tergantung varietas tanaman padi, dan beluk rata-rata > 10% selambat-lambatnya tiga minggu sebelum panen.\n");
                 }else  if(hasil.equals("WERENG BATANG COKLAT")){
                     gejala.setText("Wereng batang coklat (WBC) sebelumnya termasuk hama sekunder dan menjadi hama penting akibat penyemprotan pestisida yang tidak tepat pada awal pertumbuhan tanaman, sehingga membunuh musuh alami. Pertanaman yang dipupuk nitrogen tinggi dengan jarak tanam rapat merupakan kondisi yang sangat disukai WBC. Stadia tanaman yang rentan terhadap serangan WBC adalah dari pembibitan sampai fase matang susu. Gejala kerusakan yang ditimbulkannya adalah tanaman menguning dan cepat sekali mengering. Umumnya gejala terlihat mengumpul pada satu lokasi - melingkar disebut hopperburn. Mekanisme kerusakan adalah WBC menghisap cairan tanaman pada sistem vaskular (pembuluh tanaman).");
-                    solusi.setText("    1. Pengaturan pola tanam\n" +
+                    solusi.setText("1. Pengaturan pola tanam\n" +
                             "Pengaturan pola tanam yang diterapkan adalah tanam serentak, pergiliran tanaman, dan pergiliran varietas berdasarkan tingkat ketahanan dan tingkat biotipe WBC.\n" +
-                            "    2. Penggunaan varietas tahan\n" +
+                            "2. Penggunaan varietas tahan\n" +
                             "Varietas tahan dapat digabungkan dengan cara pengendalian biologi misalnya pemanfaatan musuh alami. Agar penggunaan varietas tahan dapat bertahan lama dan efektif perlu diintegrasikan dengan komponen pengendalian yang lain, seperti pengaturan pola tanam, pergiliran varietas, sistem pengamatan yang intensif.\n" +
-                            "    3. Pengendalian hayati\n" +
+                            "3. Pengendalian hayati\n" +
                             "Beberapa cendawan patogen serangga yang dapat dimanfaatkan untuk mengendalikan WBC adalah Beauveria bassiana, Metarhizium anisopliae, M. flavoviridae, dan Hirsutella citriformis. Konservasi musuh alami dengan cara menghindari penyemprotan pestisida tanpa dasar yang jelas.\n" +
-                            "    4. Eradikasi\n" +
+                            "4. Eradikasi\n" +
                             "Eradikasi dilakukan apabila ditemukan serangan kerdil rumput dan kerdil hampa dengan pencabutan dan pemusnahan.\n" +
-                            "    5. Penggunaan insektisida\n" +
+                            "5. Penggunaan insektisida\n" +
                             "Pengendalian dengan insektisida dilaksanakan apabila setelah dilakukan pengelolaan agroekosistem masih dijumpai WBC > 10 ekor/rumpun pada tanaman berumur > 40 hst atau > 40 ekor/rumpun pada tanaman berumur > 40 hst. insektisida yang digunakan bersifat selektif, efektif dan terdaftar dan diizinkan.\n" +
                             "Di daerah serangan WBC yang merupakan daerah serangan virus (kerdil rumput dan atau kerdil hampa) dilakukan penggunaan insektisida butiran pada saat satu hari sebelum pengolahan tanah terakhir secara seed bed treatment. Penyemprotan tambahan dilakukan apabila ditemukan WBC di persemaian dan pertanaman, dengan ketentuan seperti di atas. Aplikasi insektisida dilakukan bila keadaan serangan melebihi ambang pengendalian dengan menggunakan insektisida yang berbahan aktif antara lain: imidakloprid, dimehipo, BPMC, karbofuran, buprofezin, MIPC, fipronil, monosultap, karbosulfan, abamektin, bisultap, bensultap, etofenproks, kartap hidroklorida, etiprol, spinosad, tiametoksam, amitraz, propoksur, metolkarb, spinetoram, saponin, monosultap atau flubendiamida.");
                 }else if (hasil.equals("HAMA PUTIH PALSU")){
                     gejala.setText("Hama putih palsu (HPP) sebenarnya jarang menjadi masalah utama di pertanaman padi. Kerusakan akibat serangan larva hama putih palsu terlihat dengan adanya warna putih pada daun di pertanaman. Larva makan jaringan hijau daun dari dalam lipatan daun meninggalkan permukaan bawah daun yang berwarna putih.\n");
-                    solusi.setText("    1. Pengaturan air irigasi\n" +
+                    solusi.setText("1. Pengaturan air irigasi\n" +
                             "Cara pengendalian yang sederhana ialah dengan mengeringkan air pada persemaian dan persawahan yang terserang dalam waktu pendek (5-7 hari) untuk mencegah perpindahan larva sehingga larva mati, karena larva hanya bertahan hidup bila ada air.\n" +
-                            "    2. Pengunaan insektisida\n" +
+                            "2. Pengunaan insektisida\n" +
                             "Mengingat hama putih hanya menyerang tanaman muda dan banyaknya parasitoid dan predator di lapang, maka pengendalian secara kimiawi perlu dipertimbangkan secara cermat. Tanaman yang terserang dengan cepat tumbuh daun baru. Penyemprotan dengan insektisida yang efektif dan terdaftar dan diijinkan apabila ditemukan intensitas serangan pada daun bendera 15% atau rata-rata intensitas serangan pada seluruh areal sudah mencapai > 25%. Insektisida yang digunakan berbahan aktif antara lain: imidakloprid, dimehipo, BPMC, MIPC, fipronil, karbosulfan, insoksakarb, abamektin, bensultap, etofenproks, spinosad, klorantraniliprol, spinetoram, atau flubendiamida.");
                 }else if (hasil.equals("WERENG HIJAU")){
                     gejala.setText("Wereng hijau merupakan hama penting karena dapat menyebarkan (vektor) virus penyebab penyakit tungro. Kepadatan populasi wereng hijau biasanya rendah, sehingga jarang menimbulkan kerusakan karena cairan tanaman dihisap oleh wereng hijau. Namun karena kemampuan pemencaran (dispersal) yang tinggi, bila ada sumber inokulum sangat efektif menyebarkan penyakit. Populasi wereng hijau hanya meningkat pada saat tanam hingga pembentukan malai. Kepadatan populasi tertinggi pada saat itu mencapai 1 ekor perrumpun. Gejala kerusakan yang ditimbulkannya adalah tanaman menjadi kerdil, anakan berkurang, daun berubah warna menjadi kuning sampai kuning oranye.");
-                    solusi.setText("    1. Pergiliran tanaman dengan tanaman bukan padi\n" +
-                            "    2. Penanaman varietas tahan\n" +
-                            "    3. Sanitasi terhadap tanaman inang\n" +
-                            "    4. Aplikasi insektisida dilakukan bila keadaan serangan melebihi ambang pengendalian dengan\n" +
+                    solusi.setText("1. Pergiliran tanaman dengan tanaman bukan padi\n" +
+                            "2. Penanaman varietas tahan\n" +
+                            "3. Sanitasi terhadap tanaman inang\n" +
+                            "4. Aplikasi insektisida dilakukan bila keadaan serangan melebihi ambang pengendalian dengan\n" +
                             "menggunakan insektisida yang berbahan aktif antara lain: imidakloprid, BPMC, karbofuran, tiametoksam, buprofezin, MIPC, atau etofenproks.");
                 }else if (hasil.equals("ULAT GRAYAK")){
                     gejala.setText("Serangan Kerusakan terjadi karena larva makan bagian atas tanaman pada malam hari dan cuaca yang berawan. Daun yang dimakan dimulai dari tepi daun sampai hanya meninggalkan tulang daun dan batang. Larvanya sangat rakus, semua stadia tanaman padi dapat diserangnya, mulai dari pembibitan, khususnya pembibitan kering, sampai fase pengisian. M. separata dapat memotong pangkal malai dan dikenal sebagai ulat pemotong malai");
-                    solusi.setText("        1. Pengendalian secara kultur teknis:\n" +
+                    solusi.setText("1. Pengendalian secara kultur teknis:\n" +
                             "    a. pengolahan tanah dengan membalikkan tanah\n" +
                             "    b. membersihkan gulma sebagai tempat hidup ulat grayak\n" +
-                            "        2. Pengendalian biologi : jenis parasitoid (Telenomus sp., Cotesia sp.) dan predator jalat buah   Tachinidae, semut Formicidae serta laba-laba.\n" +
-                            "        3. Pengendalian kimiawi: penyemprotan insektisida pada daerah yang terserang. Insektisida yang digunakan berbahan aktif antara lain : karbofuran atau etofenproks");
+                            "2. Pengendalian biologi : jenis parasitoid (Telenomus sp., Cotesia sp.) dan predator jalat buah   Tachinidae, semut Formicidae serta laba-laba.\n" +
+                            "3. Pengendalian kimiawi: penyemprotan insektisida pada daerah yang terserang. Insektisida yang digunakan berbahan aktif antara lain : karbofuran atau etofenproks");
                 }else if (hasil.equals("WALANG SANGIT")){
                     gejala.setText("Serangan Walang sangit merusak bulir padi pada fase pemasakan dengan cara menghisap butiran gabah yang sedang mengisi. Serangga mempertahankan diri dengan mengeluarkan bau. Fase pertumbuhan tanaman padi yang rentan terhadap serangan walang sangit adalah dari keluarnya malai sampai masak susu. Kerusakan yang ditimbulkannya menyebabkan beras berubah warna, mengapur, dan hampa.");
-                    solusi.setText("            1. Pola tanam\n" +
+                    solusi.setText("1. Pola tanam\n" +
                             "Tanam serentak dalam hamparan sawah yang cukup luas dengan perbedaan waktu tanam paling lama 2 minggu. Keserentakan tanam diartikan sebagai keserentakan memasuki fase \tmasak susu. Dengan demikian periode waktu yang cocok bagi penyerangan walang sangit berlangsung pendek.\n" +
-                            "            2. Sanitasi\n" +
+                            "2. Sanitasi\n" +
                             "Dilakukan sanitasi atau pembersihan tanaman inang dan tanaman-tanaman yang digunakan sebagai tempat bersembunyi di sekitar pertanaman padi.\n" +
-                            "            3. Cara mekanik\n" +
+                            "3. Cara mekanik\n" +
                             "Dilakukan pengumpulan serangga dengan menggunakan alat perangkap, kemudian dimatikan. Sebagai alat perangkap dapat digunakan bangkai kepiting, ketam, tulang-tulang, dan sebagainya yang diletakkan di sawah. Dapat pula dilakukan dengan membakar jerami \tatau memasang lampu perangkap.\n" +
-                            "        4. Penggunaan insektisida\n" +
+                            "4. Penggunaan insektisida\n" +
                             "Penyemprotan dengan insektisida berbahan aktif antara lain: BPMC, metolkarb, fipronil, imidakloprid, MIPC, abamektin, propoksur, dimehipo, atau karbofuran.");
                 }else if (hasil.equals("GANJUR")){
                     gejala.setText("Stadia tanaman padi yang rentan terhadap serangan ganjur adalah dari fase pembibitan sampai pembentukan malai. Larvanya memakan titik tumbuh tanaman. Ciri kerusakan yang ditimbulkannya adalah daun menggulung seperti daun bawang. Ukuran daun bawang bisa panjang, bisa juga kecil/pendek sehingga sulit dilihat. Anakan yang memiliki gejala seperti daun bawang ini tidak akan menghasilkan malai. Pada saat tanaman mencapai fase pembentukan bakal malai, laiva tidak lagi menyebabkan kerusakan.");
-                    solusi.setText("            1. Waktu tanam\n" +
+                    solusi.setText("1. Waktu tanam\n" +
                             "Waktu tanam dilakukan lebih awal, yaitu 1,5 bulan sebelum puncak curah hujan tertinggi, sehingga pada saat kelembaban tinggi, tanaman sudah mencapai fase generatif. Usaha penanaman dini perlu dilakukan secara serentak.\n" +
-                            "            2. Jarak tanam\n" +
+                            "2. Jarak tanam\n" +
                             "Jarak tanam yang terlalu rapat akan menguntungkan bagi perkembangan hama ganjur. Dianjurkan untuk menanam dengan jarak tanam 20- 25 cm dengan jumlah bibit 2-3 bibit.\n" +
-                            "            3. Penyiangan\n" +
+                            "3. Penyiangan\n" +
                             "Perlu dilakukan untuk menekan perkembangan hama ganjur.\n" +
-                            "            4. Penggunaan insektisida yang berbahan aktif imidakloprid.");
+                            "4. Penggunaan insektisida yang berbahan aktif imidakloprid.");
                 }else if (hasil.equals("BELALANG KEMBARA")){
                     gejala.setText("Belalang kembara fase gregaria aktif terbang pada siang hari dalam kelompok-kelompok besar. Pada senja hari, kelompok belalang hinggap pada suatu lokasi, biasanya untuk bertelur pada lahanlahan kosong berpasir, makan tanaman yang dihinggapi dan kawin, Pada pagi harinya, kelompok belalang terbang untuk berputarputar atau pindah lokasi. Pertanaman yang dihinggapi pada malam hari tersebut biasanya dimakan sampai habis. Sedangkan kelompok besar nimfa (belalang muda) biasanya berpindah tempat dengan berjalan secara berkelompok,");
-                    solusi.setText("                1. Pola tanam\n" +
+                    solusi.setText("1. Pola tanam\n" +
                             "Mengatur pola tanam dengan tanaman alternatif yang kurang/tidak disukai belalang dengan penanaman tumpang sari atau diversifikasi.\n" +
-                            "                2. Pengendalian cara mekanis\n" +
+                            "2. Pengendalian cara mekanis\n" +
                             "Melakukan gerakan massal pengendalian mekanis sesuai stadia populasi :\n" +
                             "Stadia telur\n" +
                             "    a. Untuk mengetahui adanya lokasi telur maka harus melakukan pemantauan lokasi dan waktu hinggap kelompok belalang dewasa secara intensif.\n" +
@@ -328,74 +328,74 @@ public class HomeFragment extends Fragment {
                             "\n" +
                             "Stadia nimfa\n" +
                             "    a. Setelah + 2 minggu sejak hinggapnya kelompok belalang kembara mulai dilakukan pemantauan terhadap kemungkinan adanya nimfa yang muncul. Pengendalian pada saat nimfa adalah kunci penting. Pengendalian nimfa dilakukan dengan cara memukul, menjaring, membakar atau perangkap lainnya. Menghalau nimfa ke suatu tempat yang sudah disiapkan di tempat terbuka untuk kemudian dimatikan. Nimfa yang sudah ada di tempat terbuka apabila memungkinkan dapat dilakukan pembakaran namun harus hati-hati agar api tidak merembet ke tempat lain.\n" +
-                            "                3. Pemanfaatan agens hayati\n" +
+                            "3. Pemanfaatan agens hayati\n" +
                             "Agens hayati Metarhizium anisopliae var. acridium, Beauveria bassiana, Enthomophaga sp. \tdan Nosuma cocustal di beberapa negara terbukti dapat digunakan pada saat populasi belum meningkat. Penggunaan agens hayati digunakan sebagai pencegahan secara dini, dan  tidak efektif bila populasi sudah tidak terkendali. Penggunaan agens hayati strain lokal lebih diutamakan.\n" +
-                            "                4. Penggunaan insektisida\n" +
+                            "4. Penggunaan insektisida\n" +
                             "Pada keadaan populasi tinggi, dalam waktu singkat harus diupayakan penurunan populasi. Apabila cara-cara lain sudah ditempuh dan populasi masih tetap tinggi, maka alternatif lainnya yaitu penggunaan insektisida berbahan aktif antara lain: BPMC, dimehipo, beta siflutrin, deltametrin, karbaril, atau klorpirifos. Penyemprotan dengan menggunakan alat aplikasi ULV lebih baik karena lebih efisien. Pengendalian yang tepat dilakukan sejak stadia nimfa kecil karena belum merusak, lebih peka terhadap insektisida, yang dilakukan pada \tsiang hari. Apabila terpaksa karena terlambat atau tidak diketahui sebelumnya, pengendalian terhadap imago dilaksanakan pada malam hari pada saat belalang beristirahat (mulai \tbelalang hinggap pada senja hari sampai terbang waktu pagi hari).\n" +
-                            "    5. Penanaman kembali\n" +
+                            "5. Penanaman kembali\n" +
                             "Pada areal yang sudah terserang belalang dan musim tanam belum terlambat, diupayakan segera diadakan penanamar kembali dengan tanaman yang tidak disukai belalang sepert kedelai, kacang hijau, ubi kayu, ubijalar, kacang panjang tomat, kacang tanah, petsai, kubis, \tsawi atau tanaman lainnya,");
                 }else if (hasil.equals("KEPINDING TANAH")){
                     gejala.setText("Kepinding tanah menyerang padi dari fase pembibitan sampai tanaman dewasa dengan cara menghisap cairan pelepah dan batang yang menyebabkan warna coklat di sekitar bagian yang dihisap. Serangan berat mengakibatkan tanaman tumbuh terhambat, warna kekuning-kuningan, kering dan akhirnya mati membusuk. Daun menjadi kering dan menggulung secara membujur.");
-                    solusi.setText("        1. Cara bercocok tanam\n" +
+                    solusi.setText("1. Cara bercocok tanam\n" +
                             "    a. Dilakukan pengolahan tanah segera setelah panen untuk mematikan telur, nimfa, dan imago yang tinggal pada pangkal tanaman padi.\n" +
                             "    b. Pengeringan lahan dapat menghambat perkembangan kepinding tanah.\n" +
                             "    c. Pemupukan pada saat terserang ringan agar tanaman mampu mengkompensasi serangan.\n" +
-                            "        2. Sanitasi Sanitasi lahan dan lingkungan dari tumbuhan inang lainnya misalnya rumput-rumputan, dapat menghambat perkembangan kepinding tanah.\n" +
-                            "        3. Penggunaan insektisida yang efektif, terdaftar dan diijinkan.");
+                            "2. Sanitasi Sanitasi lahan dan lingkungan dari tumbuhan inang lainnya misalnya rumput-rumputan, dapat menghambat perkembangan kepinding tanah.\n" +
+                            "3. Penggunaan insektisida yang efektif, terdaftar dan diijinkan.");
                 }else if (hasil.equals("LALAT BIBIT")){
                     gejala.setText("Gejala Serangan Lalat bibit menyerang tanaman padi yang baru dipindah tanam pada sawah yang selalu tergenang. Stadia hama yang merusak tanaman padi adalah larvanya. Larva lalat bibit berada di bagian tengah daun yang masih menggulung. Larva bergerak ke bagian tengah tanaman merusak jaringan bagian dalam sampai titik tumbuh daun. Gejala kerusakan lalat bibit adalah bercak-bercak kuning yang dapat dilihat di sepanjang tepi daun yang baru muncul dan daun yang terserang mengalami perubahan bentuk. Tanaman yang terserang lalat bibit anakannya menjadi berkurang. Serangan berat dapat memperlambat fase pematangan 7-10 hari. Tanaman pada dasarnya dapat mengkompensasi kerusakan asalkan tidak ada serangan hama lainnya atau tekanan lingkungan yang mempengaruhi.");
-                    solusi.setText("            1. Pengaturan cara bercocok tanam dengan menunda waktu tanam yaitu beberapa minggu setelah turun hujan pertama pada awal musim hujan.\n" +
-                            "            2. Sanitasi lingkungan terutama tanaman yang dapat menjadi inang lalat bibit.\n" +
-                            "            3. Perlakuan benih (seed treatment) dengan insektisida yang terdaftar dan diijinkan.");
+                    solusi.setText("1. Pengaturan cara bercocok tanam dengan menunda waktu tanam yaitu beberapa minggu setelah turun hujan pertama pada awal musim hujan.\n" +
+                            "2. Sanitasi lingkungan terutama tanaman yang dapat menjadi inang lalat bibit.\n" +
+                            "3. Perlakuan benih (seed treatment) dengan insektisida yang terdaftar dan diijinkan.");
                 }else if (hasil.equals("URET/LUNDI")){
                     gejala.setText("Gejala Serangan Stadia larva sangat berbahaya karena memakan akar tanaman padi dan mematikan tumbuhan tersebut. Larva memakan akar tanaman sehingga tanaman layu seperti kekurangan air, daun berwarna kuning, mengering dan akhirnya mati. Kumbang hanya makan sedikit daun-daunan dan tidak begitu merusak dibanding uretnya.");
-                    solusi.setText("                1. Pengaturan pola tanam\n" +
-                            "                2. Dilakukan pengolahan tanah dengan baik\n" +
-                            "                3. Pengumpulan kumbang pada awal musim hujan");
+                    solusi.setText("1. Pengaturan pola tanam\n" +
+                            "2. Dilakukan pengolahan tanah dengan baik\n" +
+                            "3. Pengumpulan kumbang pada awal musim hujan");
                 }else if (hasil.equals("ORONG ORONG")){
                     gejala.setText("Gejala Serangan Stadia tanaman yang rentan terhadap serangan hama ini adalah fase pembibitan sampai anakan. Benih yang disebar di pembibitan juga dimakan. Hama memotong tanaman pada pangkal batang dan orang sering keliru dengan gejala kerusakan yang disebabkan oleh penggerek batang (sundep). Orong-orong merusak akar muda dan bagian pangkal tanaman yang berada di bawah tanah. Tanaman padi yang terserang hama orong-orong menampakkan gejala layu, dan apabila dicabut perakarannya telah rusak dengan potongan yang khas. Peningkatan intensitas serangan akan terjadi apabila kondisi air di persawahan macak-macak.");
-                    solusi.setText("                    1. Pengolahan tanah secara baik dan penggenangan sawah akan membunuh telur dan nimfa.\n" +
-                            "                    2. Pengendalian mekanis pada saat pengolahan tanah terhadap anjing tanah yang berenang\n" +
-                            "                    3. Penggenangan air pada lahan (pada lahan pasang surut penggenangan pada tipe luapan A dan B)\n" +
-                            "                    4. Penggunaan bibit umur 35-42 hari dianjurkan hanya untuk varietas berumur panjang seperti IR42 dan Lematang\n" +
-                            "                    5. Penggunaan insektisida karbofuran pada saat tanam dapat menekan intensitas serangan sampai menjadi 10%\n" +
-                            "                    6. Umpan beracun yang terdiri dari satu bagian Sodium fluosillicate (atau insektisida lain) dan satu bagian gula merah yang dicampur dengan 10 bagian karir (dedak beras), kemudian \tdibuat pasta dengan mencampurkan air secukupnya\n" +
-                            "                    7. Menggunakan perangkap lampu");
+                    solusi.setText("1. Pengolahan tanah secara baik dan penggenangan sawah akan membunuh telur dan nimfa.\n" +
+                            "2. Pengendalian mekanis pada saat pengolahan tanah terhadap anjing tanah yang berenang\n" +
+                            "3. Penggenangan air pada lahan (pada lahan pasang surut penggenangan pada tipe luapan A dan B)\n" +
+                            "4. Penggunaan bibit umur 35-42 hari dianjurkan hanya untuk varietas berumur panjang seperti IR42 dan Lematang\n" +
+                            "5. Penggunaan insektisida karbofuran pada saat tanam dapat menekan intensitas serangan sampai menjadi 10%\n" +
+                            "6. Umpan beracun yang terdiri dari satu bagian Sodium fluosillicate (atau insektisida lain) dan satu bagian gula merah yang dicampur dengan 10 bagian karir (dedak beras), kemudian \tdibuat pasta dengan mencampurkan air secukupnya\n" +
+                            "7. Menggunakan perangkap lampu");
                 }else if (hasil.equals("TIKUS")){
                     gejala.setText("Gejala Serangan Tikus merusak tanaman padi mulai dari tengah petak, kemudian meluas ke arah pinggir, dan menyisakan 1 - 2 baris padi di pinggir petakan (pada keadaan serangan berat).");
-                    solusi.setText("    1. Tanam serentak\n" +
+                    solusi.setText("1. Tanam serentak\n" +
                             "Keserentakan tanaman adalah serentak memasuki fase generatif, dengan selang waktu kurang dari 10 hari yang meliputi luas + 300 ha.\n" +
-                            "    2. Sanitasi dan kultur teknis\n" +
+                            "2. Sanitasi dan kultur teknis\n" +
                             "    a. Lingkungan yang bersih merupakan syarat utama dalam manajemen pengendalian hama tikus agar perkembangbiakannya dapat ditekan.\n" +
                             "    b. Meminimalisasi ukuran pematang dan tanggul di sekitar persawahan. Tikus sawah lebih menyenangi tinggal pada pematang yang tingginya antara 12-30 cm dengan lebar > 60 cm.\n" +
                             "    c. Pola tanam sangat menentukan tingkat populasi hama tikus.\n" +
-                            "    3. Kombinasi penggunaan anjing, pengasapan dan perangkap bambu Penelitian pengendalian hama tikus yang telah dilaksanakan ini lebih banyak \tmenggunakan anjing. Pada tahun pertama penggunaan pengasapan dan perangkap bambu hanya berperan sebagai komponen penunjang apabila penggunaan anjing sulit dilakukan. Akan tetapi pada tahun berikutnya pengasapan dan perangkap bambu lebih banyak membunuh tikus, karena sebagian tikus menempati lubang yang cukup dalam dan sebagian lagi banyak memilih tinggal di dalam perangkap bambu terutama pada saat bunting dan bermalai (Thamrin et al., 2001).\n" +
-                            "    4. Sistem pagar perangkap\n" +
+                            "3. Kombinasi penggunaan anjing, pengasapan dan perangkap bambu Penelitian pengendalian hama tikus yang telah dilaksanakan ini lebih banyak \tmenggunakan anjing. Pada tahun pertama penggunaan pengasapan dan perangkap bambu hanya berperan sebagai komponen penunjang apabila penggunaan anjing sulit dilakukan. Akan tetapi pada tahun berikutnya pengasapan dan perangkap bambu lebih banyak membunuh tikus, karena sebagian tikus menempati lubang yang cukup dalam dan sebagian lagi banyak memilih tinggal di dalam perangkap bambu terutama pada saat bunting dan bermalai (Thamrin et al., 2001).\n" +
+                            "4. Sistem pagar perangkap\n" +
                             "Tikus menyenangi atau memilih padi fase generatif dari pada vegetatif, sehingga padi yang \tfase generatifnya lebih awal dari pada tanaman padi di sekitarnya akan mengalami kerusakan berat, karena semua populasi tikus yang ada di sekitar pertanaman akan memakan padi tersebut. Fenomena ini melahirkan teknik pengendalian tikus dengan menggunakan tanaman perangkap. Tanaman perangkap tersebut diberi pagar yang berlubang dan di dalamnya dilengkapi dengan perangkap bubu, sehingga tikus yang masuk melalui lubang tersebut akan terperangkap.\n" +
-                            "    5. Pengumpanan beracun\n" +
+                            "5. Pengumpanan beracun\n" +
                             "Pengumpanan beracun efektif bila tidak ada tanaman di lapang dan dapat dilakukan apabila ditemukan serangan >15%. Umpan diletakan pada tempat-tempat yang banyak dikunjungi \tatau dilewati tikus. Apabila umpan yang dipasang habis, berarti populasi tikus tinggi, perlu dilakukan pengumpanan ulang pada saat menjelang akhir anakan maksimal.\n" +
-                            "    6. Pemanfaatan musuh alami\n" +
+                            "6. Pemanfaatan musuh alami\n" +
                             "Musuh alami hama tikus antara lain: kucing, anjing, ular sawah, dan burung hantu.\n" +
-                            "    7. Lain-lain\n" +
+                            "7. Lain-lain\n" +
                             "Penggenangan lahan, gropyokan, dan pemanfaatan jaring. Pengendalian hama tikus tidak dapat dilakukan hanya oleh sebagian petani. Pengendaliannya harus terorganisasi secara \tbaik dalam wilayah yang luas. Tanpa organisasi pengendalian yang baik maka teknologi \tpengendalian yang efektif tidak akan berhasil menekan populasi hama tikus. Sanitasi dan waktu tanam yang serentak adalah komponen pengendalian yang harus dilakukan oleh semua petani. Namun dalam mengatur setiap komponen pengendalian diperlukan adanya keterlibatan pengambil kebijakan yang bekerjasama dengan penanggung jawab teknis agar pengendalian dapat dikoordinasi dengan baik.");
                 }else if (hasil.equals("KEONG MAS")){
                     gejala.setText("Gejala Serangan Keong mas merusak tanaman dengan cara memarut jaringan tanaman dan memakannya, menyebabkan adanya bibit yang hilang di pertanaman. Bekas potongan daun dan batang yang diserang terlihat mengambang.");
-                    solusi.setText("        1. Pengendalian fisik/mekanik\n" +
+                    solusi.setText("1. Pengendalian fisik/mekanik\n" +
                             "Mengambil secara langsung siput murbei dari persawahan, dimanfaatkan sebagai pakan ternak. Pengumpulan siput murbei akan mudah jika memakai antraktan seperti daun talas, daun pepaya dan bunga terompet.\n" +
-                            "        2. Pengendalian hayati\n" +
+                            "2. Pengendalian hayati\n" +
                             "Predator siput murbei adalah bebek.\n" +
-                            "        3. Pengendalian kultur teknis\n" +
+                            "3. Pengendalian kultur teknis\n" +
                             "    a. Di tepi pematang sawah dibuat parit-parit selebar 30 cm dengan kedalaman 15-20 cm, untuk mengumpulkan dan mengambil keong pada saat sawah tidak berair.\n" +
                             "    b. Antisipasi dengan cara pemasangan air setinggi 0,5 meter, supaya telur-telur tersebut tidak dapat menetas.\n" +
-                            "        4. Penggunaan insektisida\n" +
+                            "4. Penggunaan insektisida\n" +
                             "    a. Dari bahan tumbuhan\n" +
                             "Gunakan tumbuhan yang mengandung racun bagi siput murbei. Misalnya kulit \tbatang gugo (Entada phaseikaudes K Meer), daun tubangkamisa, daun sembung (Blumea \tbalsamifera), daun tuba, daun enceng (Monochoria vaginalis), daun tembakau (Nicotiana \ttabacum L), daun calamansi atau jeruk (Citrus microcarpa Bunge), akar tubli, daun \t(butrowali) makabuhay (Tinospora rumphii Boerl), dan cabe merah.\n" +
                             "    b. Moluskisida dari bahan sintetik.");
                 }else if (hasil.equals("BURUNG")){
                     gejala.setText("Gejala Serangan Burung menyerang tanaman padi yang sudah dalam fase matang susu sampai pemasakan biji (sebelum panen). Serangan mengakibatkan biji hampa, adanya gejala seperti beluk, dan biji banyak yang hilang.");
-                    solusi.setText("    1. Penjaga burung mulai dari jam 6-10 pagi dan jam 2-6 sore, karena waktu-waktu tersebut merupakan waktu yang kritis bagi tanaman diserang burung.\n" +
-                            "    2. Gunakan jaring untuk mengisolasi sawah dari serangan burung; luas sawah yang diisolasi kurang dari 0,25 hektar.\n" +
-                            "    3. Bila tanam tabela:\n" +
+                    solusi.setText("1. Penjaga burung mulai dari jam 6-10 pagi dan jam 2-6 sore, karena waktu-waktu tersebut merupakan waktu yang kritis bagi tanaman diserang burung.\n" +
+                            "2. Gunakan jaring untuk mengisolasi sawah dari serangan burung; luas sawah yang diisolasi kurang dari 0,25 hektar.\n" +
+                            "3. Bila tanam tabela:\n" +
                             "    a. benih yang sudah disebar di sawah ditutup dengan tanah; \n" +
                             "    b. benih yang digunakan harus lebih banyak; \n" +
                             "    c. gunakan orang-orangan atau tali yang diberi plastik untuk menakut-nakuti burung; \n" +
@@ -404,7 +404,7 @@ public class HomeFragment extends Fragment {
                             "    f. kendalikan habitat/sarang burung.");
                 }else if (hasil.equals("BLAS")){
                     gejala.setText("Gejala Serangan Gejala penyakit blas secara umum dapat digolongkan menjadi blas daun (leaf blast) yang menyerang pada stadia vegetatif dan busuk leher (neck rot) yang menyerang fase generatif. Gejala awal dimulai dari bercak kecil berwarna coklat keputihan. Gejala akan berkembang dengan cepat pada kondisi kelembaban tinggi dan varietas yang peka. Bercak dapat berkembang sampai ukuran panjang 1-1,5 cm dan lebar 0,3-0,5 cm, biasanya tepi bercak berwarna coklat. Bercak pada daun mempunyai ciri khas berbentuk kumparan atau elips lebah di tengah dan meruncing di kedua ujungnya atau berbentuk belah ketupat. Bagian tengah bercak berwarna kelabu atau keputihan, dan bagian tepi biasanya coklat atau merah kecoklatan (Gambar 25). Bentuk dan warna bercak tergantung pada kondisi lingkungan, umur bercak, dan kepekaan tanaman padi. Bercak yang banyak pada daun dapat mengakibatkan kematian tanaman, yang diikuti dengan pengeringan pelepah. Bibit yang terinfeksi berat atau tanaman pada stadia pertumbuhan akan dapat mengering dan mati di lapang. Intensitas serangan bercak daun yang tinggi di saat pertumbuhan vegetatif akan dapat mengakibatkan kekerdilan. Blas dapat menyerang batang pada buku, pangkal pelepah daun menjadi busuk dan berubah menjadi kehitam-hitaman, dan mudah patah. Bercak bisa juga terjadi pada malai. Gejala pada leher malai ditunjukkan dengan warna coklat keabuan sampai hitam pada pangkal leher malai. Infeksi pada leher malai akan mengakibatkan leher malai mudah patah, sehingga mengakibatkan terganggunya pengisian malai/hampa. Pada biji yang sakit terdapat bercak-bercak kecil yang bulat. Reaksi ketahanan varietas ditunjukkan dari warna gejala pada daun. Bercak coklat kecil menunjukkan reaksi tahan, coklat kekuningan reaksi moderat, coklat kelabu kekuningan reaksi peka, dan abu-abu keputihan reaksi sangat peka.");
-                    solusi.setText("    a. Pemupukan berimbang. Untuk daerah serangan endemis dianjurkan tidak memupuk dengan pupuk N lebih dari 90 kg per Ha, karena pupuk Nitrogen dapat meningkatkan kerentanan tanaman. Kalium berperan penting dalam memperkecil tingkat keparahan penyakit, karena kalium dapat meningkatkan ketebalan lapisan luar sel epidermis. Abu sekam merupakan limbah tanaman padi yang mempunyai unsur silikat tinggi yang dapat meningkatkan ketahanan tanaman terhadap serangan serangga, tungau dan jamur termasuk penyakit blas.\n" +
+                    solusi.setText("a. Pemupukan berimbang. Untuk daerah serangan endemis dianjurkan tidak memupuk dengan pupuk N lebih dari 90 kg per Ha, karena pupuk Nitrogen dapat meningkatkan kerentanan tanaman. Kalium berperan penting dalam memperkecil tingkat keparahan penyakit, karena kalium dapat meningkatkan ketebalan lapisan luar sel epidermis. Abu sekam merupakan limbah tanaman padi yang mempunyai unsur silikat tinggi yang dapat meningkatkan ketahanan tanaman terhadap serangan serangga, tungau dan jamur termasuk penyakit blas.\n" +
                             "    b. Penanaman varietas tahan. Varietas yang mempunyai ketahanan stabil merupakan salah satu komponen untuk pengendalian penyakit. \n" +
                             "    c. Pergiliran varietas tahan. Varietas yang ditanam secara luas dan terus menerus (dengan pola usaha tani padi-padi) hanya mampu bertahan selama beberapa musim terhadap serangan penyakit blas. \n" +
                             "    d. Tidak menggunakan benih dari daerah endemis blas. \n" +
@@ -414,14 +414,14 @@ public class HomeFragment extends Fragment {
                             "    h. Jika diperlukan tanaman dapat diaplikasi dengan fungisida yang berbahan aktif antara lain: metil tiofanat, heksakonazol, trisiklazol, kasugamisin hidroklorida, tembaga oksiklorida, mankozeb, karbendazim, tembaga oksida, azoksistrebin, difenokonazol, benomil, propikonazol, trisiklazol, isoprotiolan, tebukonazol, trifloksistrobin, asam kloro bromo iso sianurik, propineb, fluopikolid, atau simoksanil, mankozeb.");
                 }else if (hasil.equals("BERCAK COKLAT")){
                     gejala.setText("Gejala Serangan Pada umumnya gejala penyakit bercak coklat adalah pada daun dan glumae (bagian bulir), penyakit ini juga dapat muncul pada pelepah daun, batang, cabang-cabang malai dan bibit yang muda. Bercak khas pada daun berbentuk oval, berukuran variatif, gejala serangan umumnya tersebar di seluruh permukaan daun. Gejala awal berupa bintik-bintik coklat gelap atau coklat keabu-abuan dengan diameter 0,05-0,1 cm. Bercak yang berkembang sempurna berukuran sebesar 0,4-1 cm x 0,1-0,2 cm.Pada varietas peka bercak lebih lebar (mencapai 1 cm atau lebih). Dalam kondisi tertentu bercak bisa memenuhi permukaan daun yang mengakibatkan daun layu. Sehingga malai tidak dapat keluar dari pelepah daun bendera, atau tidak dapat membentuk malai. Gejala pada bulir ditandai dengan bercak coklat atau hitam pada bagian glumae. Pada tingkat intensitas yang tinggi miselia jamur dapat menembus bagian dalam glumae dan mengakibatkan bercak coklat. Penyakit bercak coklat termasuk penyakit yang terbawa oleh benih. Koleoptil terinfeksi dari biji, dengan gejala khas berwarna coklat, berbentuk bulat atau oval, akar muda yang terinfeksi menunjukkan bercak hitam.");
-                    solusi.setText("    a. Budidaya tanaman sehat, penggunaan benih bermutu, perbaikan sarana tata air, pemupukan berimbang, tanam serempak, dan pengaturan waktu tanam yang tepat. Penyakit ini tidak menimbulkan kerugian yang berarti pada pertanaman yang diusahakan dengan cara agronomi yang baik. \n" +
+                    solusi.setText("a. Budidaya tanaman sehat, penggunaan benih bermutu, perbaikan sarana tata air, pemupukan berimbang, tanam serempak, dan pengaturan waktu tanam yang tepat. Penyakit ini tidak menimbulkan kerugian yang berarti pada pertanaman yang diusahakan dengan cara agronomi yang baik. \n" +
                             "    b. Sanitasi dan pergiliran tanaman. Sifat patogen dapat bertahan di dalam jerami dan tanah, maka sebaiknya dilakukan sanitasi (jerami diangkut keluar untuk berbagai keperluan lain). Selanjutnya dilakukan pergiliran tanaman dengan tanaman bukan inang penyakit untuk mematikan patogen di dalam tanah. \n" +
                             "    c. Perlakuan biji, dilakukan dengan merendam dalam air panas (hot water treatment) dicampur dengan fungisida. Fungisida yang biasa digunakan adalah tiram, oksiklorida tembaga, atau dapat juga menggunakan formalin. \n" +
                             "    d. Menanam varietas yang tahan atau toleran. Cara ini merupakan upaya pengendalian yang efektif dan efisien. Serta mudah dikombinasikan dengan taktik pengendalian yang lain.\n" +
                             "    e. Alternatif pengendalian terakhir dengan menggunakan fungisida berbahan aktif antara lain: difenokonazol, tebukonazol, heksakonazol, belerang, tebukonazol, trifloksistrobin, azoksistrobin, difenokonazol, propikonazol, prokloraz, difenokonazol, propikonazol, tembaga tiodozol, metribuzin, mankozeb, fenbukonazol, asam khloro bromo iso sianurit, propineb, fluopikolid, ziram.");
                 }else if (hasil.equals("BUSUK BATANG")){
                     gejala.setText("Gejala serangan gejala penyakit umumnya timbul saat tanaman memasuki fase anakan maksimum. Gejala pertama adalah adanya bercak abu-abu kehijau-hijauan yang berkembang pada pelepah daun dekat permukaan air. Bercak berbentuk elips atau oval dengan bagian tepi tidak teratur, berukuran 1 cm, memanjang 2-3 cm, kemudian menyatu (gambar 27). Dalam kondisi kelembaban optimal, helaian daun yang bersinggungan dengan batang akan terinfeksi. Gejala jarang ditemui pada batang padi, dan bila ditemui biasanya bercak berukuran lebih kecil. Dalam kondisi kelembaban tinggi, pada bercak tumbuh miselium jamur yang berwarna putih sampai coklat muda yang selanjutnya terbentuk sclerotium berwarna coklat tua sampai coklat kehitaman. Gejala terlihat nyata selama pembungaan atau fase pemasakan. Infeksi berat menyebabkan bulir tidak terisi dengan sempurna.");
-                    solusi.setText("    a. Varietas tahan. Beberapa padi lokal cukup toleran terhadap penyakit ini. Sifat toleransi ini ditandai dengan kemampuan regenerasi yang cepat setelah rumpun diserang patogen. \n" +
+                    solusi.setText("a. Varietas tahan. Beberapa padi lokal cukup toleran terhadap penyakit ini. Sifat toleransi ini ditandai dengan kemampuan regenerasi yang cepat setelah rumpun diserang patogen. \n" +
                             "    b. Budidaya tanaman sehat melalui pemupukan yang berimbang, jarak tanaman yang tidak terlalu rapat, air di petakan sawah diatur supaya dapat berganti dengan yang baru, sehingga tanaman tumbuhnya lebih baik, sehat dan lebih mampu mengatasi penyakit. \n" +
                             "    c. Sanitasi lingkungan dari gulma yang menjadi inang alternatif bagi patogen. Seluruh gulma dikumpulkan dan dikomposkan sampai masak sehingga patogen tidak mampu bertahan (mati). Kompos yang sudah masak dapat dikembalikan ke sawah untuk membantu mempertahankan kesuburan tanah.\n" +
                             "    d.  Pengendalian hayati. Antagonis Trichoderma harzianum merupakan antagonis yang sangat efektif terhadap R. Solani dengan mekanisme interaksi mikoparasitismenya. Trichoderma harzianum yang diperbanyak pada medium menir jagung efektif menekan serangan penyakit ini pada dosis 22,5 kg formulasi/ha yang dicampur dengan 5001 air bersih. Penyemprotan pada bagian pangkal rumpun padi secara merata dan dilakukan pada sore hari. \n" +
@@ -434,7 +434,7 @@ public class HomeFragment extends Fragment {
                             "Budidaya tanaman sehat dianjurkan dengan menerapkan PTT yang mensinergikan komponen pengelolaan lahan, air, tanaman dan OPT. Komponen budidaya utama dalam PTT seperti pemberian pemupukan berimbang berdasarkan pengelolaan hara spesifik lokasi dan irigasi berseling akan memperbaiki vigor tanaman serta menghambat perkembangan hama-penyakit. Disamping itu dengan pemberian bahan organik akan meningkatkan arthropoda netral yang menjadi mangsa musuh alami (pemangsa). Pengendalian vektor dengan insektisida kimiawi harus dilakukan secara bijaksana berdasarkan hasil monitoring agar penggunaannya efisien dan efektif dan tidak berdampak buruk pada lingkungan. \n" +
                             "Pengendalian vektor secara hayati menggunakan insektisida nabati, bio-insektisida atau patogen serangga tidak dapat disamakan dengan pengendalian insektisida kimiawi. Pengendalian hayati dimulai sejak ditemukan vektor dan dilakukan berulang secara periodik sampai stadia rentan tanaman terhadap infeksi tungro terlewati\n" +
                             "Strategi dan rekomendasi pengendalian penyakit tungro pada kondisi lapangan sebagai berikut:\n" +
-                            "            1. Tanam Serentak\n" +
+                            "1. Tanam Serentak\n" +
                             "Hamparan sawah disebut tanam serentak apabila minimal pada luasan 20 ha dijumpai stadia tanaman yang hampir seragam. Sumber serangan adalah tanaman musim sebelumnya yang terinfeksi virus pada saat tanaman umur 45-60 hst dengan intensitas serangan lebih dari 1%. Sumber migran dapat dari lapangan yang bersangkutan dan atau dari hamparan, baik dari dalam petakan maupun galengan yang ditumbuhi rerumputan dan terdapat spesies wereng hijau lainnya selain N. virescens terutama N. nigropictus. Rekomendasi pengendalian sesuai tahapan budidaya padi untuk pertanaman berikutnya adalah: \n" +
                             "        a. Eradikasi sumber inokulum. Diupayakan 5 hari\n" +
                             "sebelum semai lahan sudah terbebas dari sumber inokulum. Tanah segera diolah untuk mencegah adanya sumber inokulum, pada singgang atau voluntir. Bila mungkin tanam padi dengan cara tabur benih langsung (tabela) menggunakan alat tabela setelah petakan dibersihkan dan diratakan. \n" +
@@ -452,7 +452,7 @@ public class HomeFragment extends Fragment {
                             "g.  Pengendalian dengan insektisida kimiawi. Apabila berdasarkan hasil monitoring saat tanaman berumur hingga 3 mst diketahui tanaman terancam, vektor perlu segera dikendalikan dengan insektisida kimiawi yang telah terdaftar dan diizinkan yang berbahan aktif in idakloprid, tiametoksan, etofenproks, BPMC, buprofezin, MIPC atau karbofuran. \n" +
                             "h. Mengurangi pemencaran vektor. Kondisi air sawah tetap dijaga pada kapasitas lapang (macak-macak), sebab sawah yang kering merangsang pemencaran wereng hijau, sehingga memperluas penyebaran tungro.\n" +
                             "i. \tPerbaikan pola tanam. Pada jangka menengah dan jangka panjang usahakan menanam palawija di antara musim tanam padi atau tanam palawija di pematang sebagai tempat berlindung musuh alami.\n" +
-                            "            2. Tanam Tidak Serentak\n" +
+                            "2. Tanam Tidak Serentak\n" +
                             "Hamparan sawah disebut tidak tanam serentak apabila dalam satu hamparan dijumpai berbagai stadia tanaman Sumber inokulum adalah tanaman umur 35-63 hst, singgang 28 hari setelah panen, persemaian dan juga voluntir. Migrasi berlangsung terus menerus dari tanaman fase generatif ke tanaman fase vegetatif. Sebagian kecil migrasi terjadi dari galengan yang ditumbuhi rerumputan dan terdapat spesies wereng hijau N. nigropictus. Rekomendasi pengendalian sesuai tahapan budidaya padi untuk pertanaman berikutnya adalah:\n" +
                             "        a. Tanam varietas tahan.\n" +
                             "        b. Monitoring ancaman di persemaian.\n" +
@@ -474,7 +474,7 @@ public class HomeFragment extends Fragment {
                             "Diagnosa Penyakit di Lapang \n" +
                             "Diagnosa penyakit HDB di lapangan berdasarkan gejala yang timbul dapat diamati secara visual. Pengamatan terhadap gejala awal (masih muda) dapat dilakukan pada pagi hari dengan memperhatikan bakteriooze. Daun yang terdapat bakteriooze apabila dilihat ke arah sinar matahari, maka akan terlihat bentuk seperti tetesan minyak. Kemudian apabila bagian gejala tersebut di potong dan kemudian dimasukkan ke dalam air, maka dari bekas potongan akan keluar eksudat yang berwarna putih. Hal ini menunjukan ciri khas dari infeksi bakteri. Karena bakteri yang menginfeksi bagian xylem apabila diberi setetes air, maka akan segera keluar.\n" +
                             "Diagnosa Penyakit di Laboratorium\n" +
-                            " Diagnosa penyakit HDB di laboratorium sebenarnya untuk meyakinkan terjadi infeksi akibat bakteri patogen tersebut. Langkah-langkah yang harus dilakukan adalah 1). memilih gejala penyakit HDB yang masih muda, 2). potong daun bergejala berukuran 1-2 mm, 3). amati di bawah mikroskop potongan daun tersebut, akan terlihat cairan yang keluar dari ujung daun. Bakteriooze yang muncul tersebut apabila ditumbuhkan pada media potato succrose agar (PSA), akan muncul koloni bakteri yang berwama kuning. Untuk meyakinkan patogenesitasnya, maka uji hypersensitif dapat dilakukan yaitu dengan menginjeksikan suspensi bakteri tersebut ke dalam jaringan tanaman tembakau. Dalam waktu 1-2 hari jaringan daun tembakau akan berwarna kuning dan kemudian berubah coklat dan akhirnya mengering. Apabila patogenesitasnya tidak ada maka jaringan yang diinjeksi tersebut tidak menunjukkan perbedaan dengan jaringan daun yang sehat.");
+                            "Diagnosa penyakit HDB di laboratorium sebenarnya untuk meyakinkan terjadi infeksi akibat bakteri patogen tersebut. Langkah-langkah yang harus dilakukan adalah 1). memilih gejala penyakit HDB yang masih muda, 2). potong daun bergejala berukuran 1-2 mm, 3). amati di bawah mikroskop potongan daun tersebut, akan terlihat cairan yang keluar dari ujung daun. Bakteriooze yang muncul tersebut apabila ditumbuhkan pada media potato succrose agar (PSA), akan muncul koloni bakteri yang berwama kuning. Untuk meyakinkan patogenesitasnya, maka uji hypersensitif dapat dilakukan yaitu dengan menginjeksikan suspensi bakteri tersebut ke dalam jaringan tanaman tembakau. Dalam waktu 1-2 hari jaringan daun tembakau akan berwarna kuning dan kemudian berubah coklat dan akhirnya mengering. Apabila patogenesitasnya tidak ada maka jaringan yang diinjeksi tersebut tidak menunjukkan perbedaan dengan jaringan daun yang sehat.");
                     solusi.setText("    a. Menanam varietas yang tahan \n" +
                             "    b. Sanitasi dengan membersihkan tunggul-tunggul dan jerami-jerami yang terinfeksi/ sakti \n" +
                             "    c. Jika menggunakan kompos jerami, pastikan jerami dari tanaman sakit sudah terdekomposisi sempurna sebelum tanam pindah\n" +

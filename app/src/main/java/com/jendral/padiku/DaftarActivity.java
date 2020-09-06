@@ -38,6 +38,7 @@ import com.jendral.padiku.model.dataLogin;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
+import at.favre.lib.crypto.bcrypt.BCrypt;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DaftarActivity extends AppCompatActivity {
@@ -162,9 +163,10 @@ public class DaftarActivity extends AppCompatActivity {
                         _telepon,image)).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
+                String bcryptHashString = BCrypt.withDefaults().hashToString(12, _password.toCharArray());
                 database.child("login")
                         .child(_nama)
-                        .setValue(new dataLogin(_username, _nama, _password,"user"))
+                        .setValue(new dataLogin(_username, _nama, bcryptHashString,"user"))
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {

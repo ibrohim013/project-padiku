@@ -29,12 +29,14 @@ public class MainActivity extends AppCompatActivity {
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
 
         navView.getMenu().findItem(R.id.navigation_home).setVisible(true);
-
+        navView.getMenu().findItem(R.id.navigation_gejala).setVisible(false);
         if(preferences.getLevelData(this).equals("user")){
             navView.getMenu().findItem(R.id.navigation_dashboard).setVisible(true);
+            navView.getMenu().findItem(R.id.navigation_gejala).setVisible(true);
         }else if(preferences.getLevelData(this).equals("admin")){
             navView.getMenu().findItem(R.id.navigation_home).setVisible(false);
             navView.getMenu().findItem(R.id.navigation_dashboard).setVisible(true);
+            navView.getMenu().findItem(R.id.navigation_gejala).setVisible(true);
         }
 
 

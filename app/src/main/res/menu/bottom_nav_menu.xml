@@ -14,6 +14,12 @@
         android:title="Communication" />
 
     <item
+        android:id="@+id/navigation_gejala"
+        android:icon="@drawable/ic_florist"
+        android:visible="false"
+        android:title="@string/hama" />
+
+    <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_account"
         android:title="Profil" />

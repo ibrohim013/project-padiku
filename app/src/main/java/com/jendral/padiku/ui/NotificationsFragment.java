@@ -1,5 +1,6 @@
 package com.jendral.padiku.ui;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -51,9 +52,9 @@ public class NotificationsFragment extends Fragment {
             _gambar;
     Button ubahSandi;
 
-    ArrayList<dataDaftar> ArrayListUdahDaftar = new ArrayList();
     DatabaseReference database = FirebaseDatabase.getInstance().getReference();
     Toolbar toolbar;
+    ProgressDialog progressDialog;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -61,6 +62,8 @@ public class NotificationsFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_notifications, container, false);
         context = v.getContext();
+        progressDialog = new ProgressDialog(context);
+        progressDialog.setCancelable(false);
         daftar = v.findViewById(R.id.daftar);
         masuk = v.findViewById(R.id.masuk);
         linearUdahLogin = v.findViewById(R.id.linearUdahLogin);
@@ -105,7 +108,7 @@ public class NotificationsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 BottomSheet bottom_sheet = new BottomSheet();
-                bottom_sheet.show(getChildFragmentManager(),"FM-SHOW");
+                bottom_sheet.show(getChildFragmentManager(), "FM-SHOW");
             }
         });
 
@@ -113,12 +116,14 @@ public class NotificationsFragment extends Fragment {
         return v;
     }
 
-    private void showDataUserDetail(){
+    private void showDataUserDetail() {
+        progressDialog.setMessage("Loading...");
+        progressDialog.show();
         database.child("data-user").child(preferences.getNamaData(context))
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if(dataSnapshot.getValue()!= null) {
+                        if (dataSnapshot.getValue() != null) {
                             _nama = dataSnapshot.child("nama").getValue(String.class);
                             _email = dataSnapshot.child("email").getValue(String.class);
                             _kota = dataSnapshot.child("kota").getValue(String.class);
@@ -131,7 +136,8 @@ public class NotificationsFragment extends Fragment {
                             telepon.setText(_telepon);
 
                             Glide.with(context).load(_gambar).placeholder(R.drawable.profile).into(imageProfile);
-    }
+                            progressDialog.dismiss();
+                        }
                     }
 
                     @Override
